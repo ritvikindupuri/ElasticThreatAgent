@@ -1,9 +1,22 @@
-#  Cyber Attack Simulator with MITRE ATT&CK Intelligence
+# 🔐 Cyber Attack Simulator with MITRE ATT&CK Intelligence
 
 ## Executive Summary
 This project is an **AI-powered security operations platform** built on Lindy AI that automates threat simulation, triage, and adversarial technique mapping. Unlike static breach simulation tools, this system uses **Claude AI** to dynamically generate multi-stage attack chains (e.g., APT campaigns, Ransomware) based on natural language prompts.
 
 The system orchestrates a complex pipeline: generating realistic attack payloads, enriching them with real-time threat intelligence via **Perplexity AI**, mapping actions to the **MITRE ATT&CK framework**, and ingesting the structured telemetry into **Elasticsearch** for visualization. This tool serves as a critical engine for validating SOC detection rules, benchmarking incident response times, and training analysts on evolving threat actor TTPs.
+
+## 🚀 Live Demo & Usage
+You can test the full orchestration workflow directly in your browser.
+
+**[Launch Cyber Attack Simulator](https://chat.lindy.ai/home/?templateId=6980db9d1750af29cc55dde6)**
+
+**Sample Prompt:**
+To simulate the full kill chain and ingest data, copy and paste the following prompt into the chat, replacing the bracketed fields with your Elasticsearch credentials:
+
+> "Simulate a sophisticated multi-stage APT campaign (Lazarus Group) targeting a financial institution. Generate 5 realistic alert logs including MITRE ATT&CK mapping and ingest them into my Elasticsearch instance:
+> * **URL:** [INSERT_YOUR_ELASTIC_URL]
+> * **Username:** [INSERT_USERNAME]
+> * **Password:** [INSERT_PASSWORD]"
 
 ## System Architecture & Orchestration
 
